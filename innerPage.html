@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB"><head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  <meta name="description" content="Diego Cisneros' home page">
+  <meta name="keywords" content="Diego Cisneros, Computer Science,Student, Peruvian, Fitness">
+  <meta name="author" content="Diego Cisneros, http://privatewww.essex.ac.uk/~dscisn/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+		
+jQuery("document").ready(function($){
+	
+	var nav = $('.nav-container');
+	
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 136) {
+			nav.addClass("f-nav");
+		} else {
+			nav.removeClass("f-nav");
+		}
+	});
+
+});
+	</script>
+  <link rel="stylesheet" type="text/css" href="css/Assignment2.css" title="Adrian's style" media="screen,projection">
+  <link href="css/lightbox.css" rel="stylesheet">
+ 
+  
+  <title>Diego Cisneros' Gallery Page</title>
+  <style data-c2c="c2c_print_container_style" media="print" type="text/css">span.skype_c2c_print_container {} span.skype_c2c_container {display:none !important;} .skype_c2c_menu_container {display:none !important;}</style><script src="Page_files/telemetry.js"></script><script src="Page_files/menu_handler.js"></script></head>
+<body >
+<div id="wrap">
+
+<div id="header">
+<a  href="images/website_image2.jpg"><img id="profilepic" src="images/website_image2.jpg"></a>
+<a href="index.html"><h1>Diego S <span class="fade">Cisneros Vitor</span></h1></a>
+<p id="slogan">"A 23 year-old peruvian studying Computer Science in England with a passion for fitness and technology"</p>
+</div>
+<div class="nav-container">
+<div class="nav">
+<nav class="clearfix">
+    <ul class="clearfix">
+        <li><a href="innerPage.html">Gallery</a></li>
+        <li><a href="index.html#contact">Contact details</a></li>
+        <li><a href="index.html#research">Research</a></li>
+        <li><a href="index.html#aboutme">About me</a></li>
+        <li><a href="index.html#myCV">Curriculum</a></li>
+        <li><a href="index.html#Announcements">Announcements</a></li>  
+    </ul>
+    <a href="#" id="pull">Menu</a>
+</nav>
+</div>
+</div>
+<p>&nbsp;</p>
+<h3> Gallery </h3>
+	<div id="content">
+		<div id="gallery">
+		<a href="images/bannerPic1.jpg" data-lightbox="personalGallery"><img class="personalGallery" height=100px src="images/bannerPic1.jpg" alt=""/></a>
+		<a href="images/bannerPic2.jpg" data-lightbox="personalGallery"><img class="personalGallery" height=100px src="images/bannerPic2.jpg" alt=""/></a>
+		<a href="images/bannerPic3.jpg" data-lightbox="personalGallery"><img class="personalGallery" height=100px src="images/bannerPic3.jpg" alt=""/></a>
+		<a href="images/bannerPic4.jpg" data-lightbox="personalGallery"><img class="personalGallery" height=100px src="images/bannerPic4.jpg" alt=""/></a>
+		<a href="images/bannerPic5.jpg" data-lightbox="personalGallery"><img class="personalGallery" height=100px src="images/bannerPic5.jpg" alt=""/></a>
+		<a href="images/bannerPic6.jpg" data-lightbox="personalGallery"><img class="personalGallery" height=100px src="images/bannerPic6.jpg" alt=""/></a>
+		<a href="images/bannerPic7.jpg" data-lightbox="personalGallery"><img class="personalGallery" height=100px src="images/bannerPic7.jpg" alt=""/></a>
+		<a href="images/bannerPic8.jpg" data-lightbox="personalGallery"><img class="personalGallery" height=100px src="images/bannerPic8.jpg" alt=""/></a>
+
+		</div>
+
+	</div>
+
+	<div id="footer">
+	<p>[
+	  <a href="innerPage.html">Gallery</a> |
+	<a href="index.html#contact">Contact details</a>|
+	<a href="index.html#research">Research</a>|
+	<a href="index.html#aboutme">About me </a>|
+	<a href="index.html#myCV"> myCV</a>|
+	<a href="index.html#Announcements">Announcements</a>]
+	</p>
+	<div id="social_media"> <!-- ------------------ Social media box --------------- -->
+					<a href="https://www.facebook.com/diegocisneros059" title="facebook"><img id="facebook" src="images/facebook_logo.jpg" alt="facebook"></a>
+					<a href="https://twitter.com/ToroCisneros"title="twitter"><img id="twitter" src="images/Twitter_Logo.jpg" alt="twitter"></a>
+					<a href="http://instagram.com/diegocisne" title="instagram"><img id="instagram" src="images/instagram_logo.jpg" alt="instagram"></a>
+					
+					</div>
+	<div id="updated_box">Page Updated on: 28th Jan 2018
+					</div>
+					
+					<div id="copyright_box"><!-- ------------------ Copyright box --------------- -->
+					© Copyright	1999-2015 <a href="http://www.essex.ac.uk/">University of Essex</a>.
+					All rights reserved.
+					</div>
+					
+					
+					
+	</div>
+
+
+</div>
+
+
+<div data-uilang="en" data-uiid="1" data-p2murl="https://c2c-p2m-secure.skype.com/p2m/v1/push" data-murl="https://pipe.skype.com/Client/2.0/" data-fp="{0E0CBD64-9FDE-4010-A01C-D278A96DC27E}" onmouseout="SkypeClick2Call.MenuInjectionHandler.hideMenu(this, event)" onmouseover="SkypeClick2Call.MenuInjectionHandler.showMenu(this, event)" style="display: none;" id="skype_c2c_menu_container" class="skype_c2c_menu_container notranslate"><div class="skype_c2c_menu_click2call"><a target="_self" id="skype_c2c_menu_click2call_action" class="skype_c2c_menu_click2call_action">Call</a></div><div class="skype_c2c_menu_click2sms"><a target="_self" id="skype_c2c_menu_click2sms_action" class="skype_c2c_menu_click2sms_action">Send SMS</a></div><div class="skype_c2c_menu_push_to_mobile"><a target="_blank" id="skype_c2c_menu_push_to_mobile_action" class="skype_c2c_menu_push_to_mobile_action">Call from mobile</a></div><div class="skype_c2c_menu_add2skype"><a target="_self" id="skype_c2c_menu_add2skype_text" class="skype_c2c_menu_add2skype_text">Add to Skype</a></div><div class="skype_c2c_menu_toll_info"><span class="skype_c2c_menu_toll_callcredit">You'll need Skype Credit</span><span class="skype_c2c_menu_toll_free">Free via Skype</span></div></div>
+ <script src="css/lightbox.js"></script>
+</body>
+</html>

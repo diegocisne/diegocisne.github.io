@@ -1,0 +1,343 @@
+   /********************************************************************/
+   /* Assignment2.css -- CSS style for Diego Cisneros' personal web pages  */
+   /********************************************************************/
+
+/*****************************************************************************/
+/* General tags                                                              */
+/*****************************************************************************/
+
+
+
+body {
+  font: Verdana,Tahoma,Arial,sans-serif;
+  color: #404040;
+  line-height: 1.2em;
+  margin: 0 10px 0 0;
+  padding: 0;
+ background-image: url("../images/white_brick1.png");
+}
+
+.f-nav{ z-index: 9999; 
+position: fixed;
+ left: 0; 
+ top: 0;
+ width: 100%;
+ } /* this make our menu fixed top */
+ 
+ table{
+	 width:100%;
+ }
+ table ul{
+	  padding:0;
+ }
+nav {
+    height: 40px;
+    width: 100%;
+    background: #455868;
+    font-size: 11pt;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 2px solid #283744;
+}
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 660px;
+    height: 40px;
+}
+
+nav li {
+    display: inline;
+    float: left;
+	
+}
+nav a {
+    color: #fff;
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    text-shadow: 1px 1px 0px #283744;
+}
+nav li a {
+    border-right: 2px solid #576979;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+nav li:last-child a {
+    border-right: 0;
+}
+nav a:hover, nav a:active {
+    background-color: #8c99a4;
+}
+nav a#pull {
+    display: none;
+} 
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+	//overflow:hidden;
+    *zoom: 1;
+}
+
+
+/*****************************************************************************/
+/* Media queries                                                              */
+/*****************************************************************************/
+
+@media screen and (max-width: 600px) {
+    nav { 
+        height: auto;
+    }
+    nav ul {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    nav li {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    nav li a {
+        border-bottom: 1px solid #576979;
+        border-right: 1px solid #576979;
+    }
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    nav {
+        border-bottom: 0;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+    }
+    nav a#pull {
+        display: block;
+        background-color: #283744;
+        width: 100%;
+        position: relative;
+    }
+    nav a#pull:after {
+        content:"";
+        background: url('../images/nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+}
+@media only screen and (max-width : 320px) {
+    nav li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    nav li a {
+        border-bottom: 1px solid #576979;
+    }
+}
+
+/*****************************************************************************/
+/* Main region                                                               */
+/*****************************************************************************/
+
+
+a {
+  text-decoration: none;
+  color: #4088b8;
+}
+
+a:hover {text-decoration: underline;}
+a img {border: 0;}
+p {margin: 0 0 18px 10px;}
+ul,ol,dl {font-size: 0.9em; margin: 2px 0 16px 35px;}
+ul ul,ol ol {margin: 4px 0 4px 35px;}
+
+h1 {
+  font-size: 4.2em;
+  line-height: 1em;
+  letter-spacing: -5px;
+  margin: 50px 0 30px 25px;
+  color: #4088b8;
+}
+
+h1 a {text-transform: none; color: #4088b8;}
+
+h2 {
+  font-size: 1.4em;
+  color: #4088b8;
+  border-bottom: 4px solid #000000;
+  padding: 0 2px 2px 5px;
+  margin: 0 0 10px 0;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4088b8;
+
+  margin: 10px 0 8px 0;
+  padding: 1px 2px 2px 3px;
+}
+
+blockquote {
+  font-size: 0.9em;
+  border: 1px solid #dadada;
+  margin: 20px 10px;
+  padding: 8px;
+}
+
+
+#profilepic{
+	float: right;
+	position:relative;
+	bottom:52px;
+ height: 170px;
+  border: 1px solid #bababa;
+  border-radius: 5px;
+  padding: 2px;
+   background-color: #ffffff;
+  margin: 10px;
+}
+#wrap {
+  
+  color: #404040;
+  margin: 10px auto;
+  padding: 0;
+}
+
+#header {margin: 0;}
+
+#toplinks {text-align: right; padding: 5px 2px 2px 3px;}
+
+#slogan {
+  font-size: 1.25em;
+  color: #808080;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin: 15px 0px 20px 35px;
+  line-height: 1.2em;
+}
+
+#gallery{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#gallery img{
+	margin-left:0.5%;
+	margin-right:0.5%;
+	border-radius:5px;
+}
+
+#thunder{
+margin-left:25%;
+margin-right:25%;
+width:50%;
+margin-bottom:1%;
+
+}
+#facebook{
+padding-top:3px;
+height: 20px;
+text-decoration:none;
+}
+#twitter{
+padding-top:3px;
+height: 20px;
+text-decoration:none;
+}
+#instagram{
+padding-top:3px;
+height: 20px;
+text-decoration:none;
+}
+
+/
+
+/*****************************************************************************/
+/* Content variations                                                        */
+/*****************************************************************************/
+#content-column{
+width:80%;
+}
+
+#content {
+  line-height: 1.5em;
+  /*  float: right; */
+  text-align: left;
+  margin: 0;
+  padding-left: 10px;
+  
+    
+}
+
+#contentalt {
+  line-height: 1.5em;
+  float: left;
+  text-align: left;
+  padding: 0;
+  margin-right: 20px;
+}
+
+#content h3, #contentalt h3 {margin: 10px 0 8px;}
+
+/*****************************************************************************/
+/* Footer                                                                    */
+/*****************************************************************************/
+
+#footer {
+  clear:  both;
+  text-align: center;
+  color: #808080;
+  font-size: 0.9em;
+  border-top: 4px solid #000000;
+  margin: 0 auto;
+  padding: 8px 0;
+  line-height: 1.6em;
+  
+}
+
+#footer p {margin: 0; padding: 0;}
+#footer a {color: #808080;}
+
+/*****************************************************************************/
+/* Various classes                                                           */
+/*****************************************************************************/
+
+
+.center {text-align: center;}
+.blue {color: #4088b8;}
+.big {font-size: 1.3em;}
+.small {font-size: 0.8em;}
+.bold {font-weight: bold;}
+
+.clear {clear: both;}
+.hide {display: none;}
+.fade {color: #c8c8c8;}
+.gray {color: #808080;}
+
+
+/*****************************************************************************/
+/* End of Assignment2.css                                                          */
+/*****************************************************************************/
